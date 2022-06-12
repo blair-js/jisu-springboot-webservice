@@ -23,6 +23,7 @@ public class PostsService {
 
     @Transactional
     public Long update(Long id, PostsUpdateRequestDto requestDto){
+        //업데이트 로직
 
         //먼저 해당 id로 Posts가 존재하는지 확인 후 없으면 IllegalArgumentException 예외를 발생시킨다.
         Posts posts = postsRepository.findById(id).orElseThrow(()
@@ -36,6 +37,8 @@ public class PostsService {
     }
 
     public PostsResponseDto findById(Long id){
+        //아이디 조회 로직
+
         Posts entity = postsRepository.findById(id).orElseThrow(() ->
                 new IllegalArgumentException("해당 게시글이 없습니다. id=" + id));
 
