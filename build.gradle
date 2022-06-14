@@ -30,6 +30,7 @@ dependencies {
     implementation('com.h2database:h2')
     implementation('org.projectlombok:lombok')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+    implementation('org.springframework.boot:spring-boot-starter-mustache')
 }
 
 test {
