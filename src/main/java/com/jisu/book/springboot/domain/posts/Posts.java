@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity{
     //실제 DB의 테이블과 매칭될 클래스로 Entity 클래스라고 한다.
     //기본 값으로 클래스의 카멜케이스 이름을 언더스코어 네이밍(_)으로 테이블 이름을 매칭한다.
     //ex.SalesManager.java -> sales_manager table

@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62a1d59e-5c0e-4618-8a6b-1946c9c2b647" name="Changes" comment="스프링 부트와 AWS로 혼자 구현하는 웹 서비스 : Chap 03 JPA로 데이터베이스 다루기(2)">
+    <list default="true" id="62a1d59e-5c0e-4618-8a6b-1946c9c2b647" name="Changes" comment="스프링 부트와 AWS로 혼자 구현하는 웹 서비스 : Chap 03 JPA로 데이터베이스 다루기(3)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/domain/posts/BaseTimeEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/service/posts/PostsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/service/posts/PostsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jisu/book/springboot/web/PostsApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jisu/book/springboot/web/PostsApiControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/domain/posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/domain/posts/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jisu/book/springboot/domain/posts/PostsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jisu/book/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +86,7 @@
       <recent name="com.jisu.book.springboot.domain.posts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PostsApiControllerTest.Posts_수정된다">
+  <component name="RunManager" selected="JUnit.PostsRepositoryTest.BaseTimeEntity_등록">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jisu.book.springboot.Application" />
       <module name="jisu-springboot-webservice.main" />
@@ -146,6 +147,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PostsRepositoryTest.BaseTimeEntity_등록" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jisu-springboot-webservice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jisu.book.springboot.domain.posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jisu.book.springboot.domain.posts" />
+      <option name="MAIN_CLASS_NAME" value="com.jisu.book.springboot.domain.posts.PostsRepositoryTest" />
+      <option name="METHOD_NAME" value="BaseTimeEntity_등록" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PostsRepositoryTest.게시글저장_불러오기" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jisu-springboot-webservice.test" />
       <extension name="coverage">
@@ -164,7 +181,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PostsApiControllerTest.Posts_수정된다" />
+        <item itemvalue="JUnit.PostsRepositoryTest.BaseTimeEntity_등록" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.PostsApiControllerTest.Posts_등록된다" />
         <item itemvalue="JUnit.PostsRepositoryTest.게시글저장_불러오기" />
@@ -202,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654947828191</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="스프링 부트와 AWS로 혼자 구현하는 웹 서비스 : Chap 03 JPA로 데이터베이스 다루기(3)">
+      <created>1655077671609</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655077671609</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,6 +244,22 @@
     <MESSAGE value="chap 07 : 테스트 코드 작성하기" />
     <MESSAGE value="스프링 부트와 AWS로 혼자 구현하는 웹 서비스 : Chap 03 JPA로 데이터베이스 다루기(1)" />
     <MESSAGE value="스프링 부트와 AWS로 혼자 구현하는 웹 서비스 : Chap 03 JPA로 데이터베이스 다루기(2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="스프링 부트와 AWS로 혼자 구현하는 웹 서비스 : Chap 03 JPA로 데이터베이스 다루기(2)" />
+    <MESSAGE value="스프링 부트와 AWS로 혼자 구현하는 웹 서비스 : Chap 03 JPA로 데이터베이스 다루기(3)" />
+    <option name="LAST_COMMIT_MESSAGE" value="스프링 부트와 AWS로 혼자 구현하는 웹 서비스 : Chap 03 JPA로 데이터베이스 다루기(3)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/jisu/book/springboot/web/PostsApiControllerTest.java</url>
+          <line>68</line>
+          <properties class="com.jisu.book.springboot.web.PostsApiControllerTest" method="Posts_수정된다">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
