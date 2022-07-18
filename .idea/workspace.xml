@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62a1d59e-5c0e-4618-8a6b-1946c9c2b647" name="Changes" comment="스프링 부트와 AWS로 혼자 구현하는 웹 서비스 : Chap 03 JPA로 데이터베이스 다루기(4) JPA Auditing으로 생성시간/수정시간 자동화하기">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/web/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jisu/book/springboot/web/IndexControllerTest.java" afterDir="false" />
+    <list default="true" id="62a1d59e-5c0e-4618-8a6b-1946c9c2b647" name="Changes" comment="Chap 04 : 머스테치(Mustache)로 화면 구성하기 - 기본 페이지 만들기">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/web/dto/PostsListResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/footer.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/header.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-save.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-update.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/domain/posts/PostsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/domain/posts/PostsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/service/posts/PostsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/service/posts/PostsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/web/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/web/PostsApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/web/PostsApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +57,9 @@
       <list>
         <option value="Kotlin Class" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,6 +78,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
@@ -80,6 +91,10 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SpringBoot\jisu-springboot-webservice\src\main\resources\templates" />
+      <recent name="C:\SpringBoot\jisu-springboot-webservice\src\main\resources\static\js\app" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.jisu.book.springboot.web" />
@@ -234,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655168955670</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Chap 04 : 머스테치(Mustache)로 화면 구성하기 - 기본 페이지 만들기">
+      <created>1655172255473</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655172255473</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,7 +276,8 @@
     <MESSAGE value="스프링 부트와 AWS로 혼자 구현하는 웹 서비스 : Chap 03 JPA로 데이터베이스 다루기(2)" />
     <MESSAGE value="스프링 부트와 AWS로 혼자 구현하는 웹 서비스 : Chap 03 JPA로 데이터베이스 다루기(3)" />
     <MESSAGE value="스프링 부트와 AWS로 혼자 구현하는 웹 서비스 : Chap 03 JPA로 데이터베이스 다루기(4) JPA Auditing으로 생성시간/수정시간 자동화하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="스프링 부트와 AWS로 혼자 구현하는 웹 서비스 : Chap 03 JPA로 데이터베이스 다루기(4) JPA Auditing으로 생성시간/수정시간 자동화하기" />
+    <MESSAGE value="Chap 04 : 머스테치(Mustache)로 화면 구성하기 - 기본 페이지 만들기" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chap 04 : 머스테치(Mustache)로 화면 구성하기 - 기본 페이지 만들기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
