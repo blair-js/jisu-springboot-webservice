@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62a1d59e-5c0e-4618-8a6b-1946c9c2b647" name="Changes" comment="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 구글 로그인 연동 및 어노테이션 기반으로 코드 개선">
+    <list default="true" id="62a1d59e-5c0e-4618-8a6b-1946c9c2b647" name="Changes" comment="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 세션 저장소로 데이터베이스 사용하기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/config/auth/dto/OAuthAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/config/auth/dto/OAuthAttributes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658234529243</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 세션 저장소로 데이터베이스 사용하기">
+      <created>1658236302965</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1658236302965</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,7 +304,8 @@
     <MESSAGE value="Chap 04 : 머스테치(Mustache)로 화면 구성하기 - 게시글 조회/수정/삭제" />
     <MESSAGE value="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 구글 서비스 등록" />
     <MESSAGE value="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 구글 로그인 연동 및 어노테이션 기반으로 코드 개선" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 구글 로그인 연동 및 어노테이션 기반으로 코드 개선" />
+    <MESSAGE value="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 세션 저장소로 데이터베이스 사용하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 세션 저장소로 데이터베이스 사용하기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
