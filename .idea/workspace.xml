@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62a1d59e-5c0e-4618-8a6b-1946c9c2b647" name="Changes" comment="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 구글 서비스 등록">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/config/auth/CustomOAuth2UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/config/auth/LoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/config/auth/LoginUserArgumentResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/config/auth/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/config/auth/dto/OAuthAttributes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/config/auth/dto/SessionUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/domain/user/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/domain/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/domain/user/UserRepository.java" afterDir="false" />
+    <list default="true" id="62a1d59e-5c0e-4618-8a6b-1946c9c2b647" name="Changes" comment="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 구글 로그인 연동 및 어노테이션 기반으로 코드 개선">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jisu/book/springboot/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-oauth.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-oauth.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +82,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SpringBoot\jisu-springboot-webservice\src\main\resources" />
       <recent name="C:\SpringBoot\jisu-springboot-webservice\src\main\resources\templates" />
       <recent name="C:\SpringBoot\jisu-springboot-webservice\src\main\resources\static\js\app" />
     </key>
@@ -272,7 +260,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658152650268</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 구글 로그인 연동 및 어노테이션 기반으로 코드 개선">
+      <created>1658234165139</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658234165139</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 구글 로그인 연동 및 어노테이션 기반으로 코드 개선">
+      <created>1658234529243</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658234529243</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,7 +297,8 @@
     <MESSAGE value="Chap 04 : 머스테치(Mustache)로 화면 구성하기 - 기본 페이지 만들기" />
     <MESSAGE value="Chap 04 : 머스테치(Mustache)로 화면 구성하기 - 게시글 조회/수정/삭제" />
     <MESSAGE value="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 구글 서비스 등록" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 구글 서비스 등록" />
+    <MESSAGE value="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 구글 로그인 연동 및 어노테이션 기반으로 코드 개선" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chap 05 : 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기 - 구글 로그인 연동 및 어노테이션 기반으로 코드 개선" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
