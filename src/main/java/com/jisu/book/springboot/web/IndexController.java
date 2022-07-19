@@ -1,5 +1,6 @@
 package com.jisu.book.springboot.web;
 
+import com.jisu.book.springboot.config.auth.LoginUser;
 import com.jisu.book.springboot.config.auth.dto.SessionUser;
 import com.jisu.book.springboot.service.posts.PostsService;
 import com.jisu.book.springboot.web.dto.PostsResponseDto;
@@ -19,9 +20,8 @@ public class IndexController {
     private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(Model model, @LoginUser SessionUser user) {
         model.addAttribute("posts", postsService.findAllDesc());
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
         if (user != null) {
             model.addAttribute("googleUserName", user.getName());
         }
