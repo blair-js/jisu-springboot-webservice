@@ -1,10 +1,14 @@
 package com.jisu.book.springboot;
 
+import com.jisu.book.springboot.config.auth.SecurityConfig;
 import com.jisu.book.springboot.web.HelloController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.FilterType;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -21,13 +25,15 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 //@WebMvcTest 어노테이션은 Controller Layer를 테스트할 때 사용된다.
 //해당 어노테이션을 사용하면 Spring MVC 컨트롤러를 이용한 요청과 응답에 필요한 Bean들만 로딩하여 가벼운 테스트 환경을 제공한다.
-@WebMvcTest(controllers = HelloController.class)
+@WebMvcTest(controllers = HelloController.class,
+            excludeFilters = {@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = SecurityConfig.class)})
 public class HelloControllerTest {
 
     @Autowired
     private MockMvc mvc; //웹 API를 테스트할 때 사용되는 객체로 스프링 MVC 테스트의 시작점이다.
 
     @Test
+    @WithMockUser(roles="USER")
     public void hello가_리턴된다() throws Exception {
         String hello = "hello";
 
@@ -44,6 +50,7 @@ public class HelloControllerTest {
     }
 
     @Test
+    @WithMockUser(roles="USER")
     public void helloDto가_리턴된다() throws Exception{
         String name = "hello";
         int amount = 1000;
